@@ -4,8 +4,7 @@ const time = document.querySelector('h3[data-testid="currentUTCTime"]');
 //write the day
 const date = new Date();
 const day1 = date.getDay();
-console.log(new Date());
-console.log(new Date().getDay());
+
 if (new Date().getDay() == 0) {
   day.innerText = "Sunday";
 } else if (new Date().getDay() == 1) {
@@ -23,5 +22,4 @@ if (new Date().getDay() == 0) {
 }
 
 const time1 = Date.now();
-console.log(Date.now());
 time.innerText = time1;
