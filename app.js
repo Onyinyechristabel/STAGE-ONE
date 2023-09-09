@@ -22,6 +22,6 @@ if (new Date().getDay() == 0) {
   day.innerText = " Saturday";
 }
 
-const time1 = date.toLocaleTimeString();
-console.log(new Date().toLocaleTimeString());
+const time1 = Date.now();
+console.log(Date.now());
 time.innerText = time1;
