@@ -1,6 +1,8 @@
 //select the class of the time
-const day = document.querySelector('h2[data-testid="CurrentDayOfTheWeek"]');
+const day = document.querySelector('h2[data-testid="currentDayOfTheWeek"]');
 const time = document.querySelector('h3[data-testid="currentUTCTime"]');
+console.log(time);
+console.log(day, 11);
 //write the day
 const date = new Date();
 const day1 = date.getDay();
@@ -21,5 +23,10 @@ if (new Date().getDay() == 0) {
   day.innerText = " Saturday";
 }
 
-const time1 = Date.now();
-time.innerText = time1;
+setInterval(function () {
+  //time to change every millieconds
+
+  const time1 = new Date().getTime();
+  console.log(time, 2);
+  time.innerText = time1;
+}, 1);
